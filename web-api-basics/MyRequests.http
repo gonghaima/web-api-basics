@@ -8,7 +8,7 @@ POST http://localhost:5215/todos
 Content-Type: application/json
 
 {
-    "id": 3,
+    "id": 1,
     "name": "Mighty Task",
     "dueDate": "2019-12-31T23:59:59.999Z",
     "isCompleted": true
@@ -16,3 +16,6 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:5215/todos/2
+
+###
+GET http://localhost:5215/tasks/1
