@@ -14,7 +14,7 @@ app.MapGet("/todos/{id}", Results<Ok<Todo>, NotFound> (int id) =>
 });
 
 // Define a controller
-app.MapPost("/todos/{id}",(Todo task)=>
+app.MapPost("/todos/",(Todo task)=>
 {
     todos.Add(task);
     return TypedResults.Created("/todos/{id}", task);

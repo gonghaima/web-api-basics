@@ -1,1 +1,18 @@
-GET http://localhost:5215/
+GET http://localhost:5215/todos
+
+### 
+GET http://localhost:5215/todos/2
+
+###
+POST http://localhost:5215/todos
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Mighty Task",
+    "dueDate": "2019-12-31T23:59:59.999Z",
+    "isCompleted": true
+}
+
+###
+DELETE http://localhost:5215/todos/2
